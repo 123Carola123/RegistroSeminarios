@@ -3,11 +3,11 @@
 <%@page import="com.emergentes.registroseminarios.Persona"%>
 <%@page import="java.util.ArrayList"%>
 <%
-	if(session.getAttribute("listaper")== null){
+	if(session.getAttribute("listaPer")== null){
 	ArrayList<Persona> lisaux= new ArrayList<Persona>();
-	session.setAttribute("listaper",lisaux);
+	session.setAttribute("listaPer",lisaux);
 	}
-	ArrayList<Persona> lista = (ArrayList<Persona>) session.getAttribute("listaper");
+	ArrayList<Persona> lista = (ArrayList<Persona>) session.getAttribute("listaPer");
 %>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
